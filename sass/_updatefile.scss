@@ -1,0 +1,313 @@
+@charset "UTF-8";
+.container {
+    h3 {
+        margin: 30px 0px;
+        font-size: 25px;
+        text-transform: uppercase;
+        span {
+            font-size: 25px;
+        }
+    }
+    .content {
+        a {
+            font-weight: bold;
+            font-size: 13px;
+            margin: 15px 0px;
+            img {
+                width: 20px;
+                margin-left: 10px;
+            }
+        }
+        .button {
+            text-align: center;
+            margin-top: 20px;
+            width: 40%;
+            margin: 20px auto 0px auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            a.btn-back {
+                padding: 7px 30px 7px 30px;
+                background: #ebebeb;
+                color: #616161;
+                border-radius: 3px;
+                text-transform: uppercase;
+                margin-left: 10px;
+                font-size: 14px;
+            }
+        }
+ 
+        table {
+            background: #ffff;
+            font-size: 13px;
+            border-top: none;
+            box-shadow: 0px 0px 5px 0px #948b8bb3;
+            border-radius: 7px;
+            tr {
+                th {
+                    font-size: 13px;
+                }
+                td {
+                    padding: 20px 0px;
+                    a {
+                        font-weight: bold;
+                        font-size: 13px;
+                    }
+                    a.popUp {
+                        padding: 10px 20px;
+                        border: 1px solid #6391f7;
+                        border-radius: 5px;
+                        img {
+                            width: 15px;
+                            margin: 0px 5px;
+                        }
+                    }
+                    p,
+                    b {
+                        font-size: 13px;
+                        color: #353535;
+                    }
+                    img {
+                        width: 100px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .desc {
+        height: auto;
+        p {
+            color: #3b3b3b;
+            font-size: 13px;
+            margin: 10px 0px;
+        }
+        b {
+            font-size: 13px;
+        }
+        a {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #ffff;
+            background: #e37458;
+            padding: 7px 20px;
+            border-radius: 3px;
+            &:hover {
+                background: #c5634a;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.search-advance {
+    width: 100%;
+    padding: 30px 0px;
+    .container {
+        display: block;
+        h3 {
+            text-align: left;
+            font-size: 20px;
+            margin: 15px 0px;
+        }
+        hr {
+            width: 100%;
+        }
+        .form-search {
+            form {
+                p {
+                    margin: 15px 0px;
+                }
+                .form-input {
+                    input {
+                        font-weight: 600;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table-data {
+    background: #f4f4f4;
+    padding: 30px 0px;
+    .container {
+        table {
+            background: #ffff;
+            box-shadow: 3px 3px 10px 1px #938b8ba6;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            max-height: 5px;
+            overflow: scroll;
+            th {
+                color: #000000;
+                text-align: center;
+                padding: 10px;
+            }
+            th:last-child {
+                border-top-right-radius: 10px;
+            }
+            th:first-child {
+                border-top-left-radius: 10px;
+            }
+            td {
+                input {
+                    float: left;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+            }
+            @media only screen and (max-width: 760px),
+            (min-device-width: 768px) and (max-device-width: 1024px) {
+                table,
+                thead,
+                tbody,
+                th,
+                td,
+                tr {
+                    display: block;
+                }
+                thead tr {
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+                tr {
+                    margin: 0 0 1rem 0;
+                    background: #fff;
+                }
+                tr:last-child {
+                    margin: 0px;
+                }
+                tr:nth-child(odd) {
+                    background: #fff;
+                }
+                td {
+                    /* Behave  like a "row" */
+                    border: none;
+                    border-bottom: 1px solid #eee;
+                    position: relative;
+                    padding-left: 25%;
+                    text-align: left;
+                    height: 50px;
+                    input {
+                        text-align: left;
+                        width: 20px;
+                    }
+                }
+                td:before {
+                    /* Now like a table header */
+                    position: absolute;
+                    /* Top/left values mimic padding */
+                    top: 0;
+                    left: 6px;
+                    width: 45%;
+                    padding-right: 10px;
+                    white-space: nowrap;
+                    text-align: center;
+                }
+                td:nth-child(1):before {
+                    content: "";
+                    width: 25%;
+                    line-height: 3em;
+                }
+                td:nth-of-type(2):before {
+                    content: "Tên miền";
+                    width: 25%;
+                    line-height: 3em;
+                }
+                td:nth-of-type(3):before {
+                    content: "Trạng thái";
+                    width: 25%;
+                    line-height: 3em;
+                }
+                td:nth-of-type(4):before {
+                    content: "Ngày đăng ký";
+                    width: 25%;
+                    line-height: 3em;
+                }
+                td:nth-of-type(5):before {
+                    content: "Ngày hết hạn";
+                    width: 25%;
+                    line-height: 3em;
+                }
+                td:nth-of-type(6):before {
+                    content: "Tình trạng";
+                    width: 25%;
+                    line-height: 3em;
+                }
+            }
+        }
+        .button {
+            display: flex;
+            width: 100%;
+            // clear: both;
+            .left {
+                width: 30%;
+                a {
+                    padding: 10px 10px;
+                    background: #e1e1e1;
+                    border-radius: 5px;
+                    color: #686868;
+                    img {
+                        width: 20px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .right {
+                width: 30%;
+                text-align: right;
+                a {
+                    padding: 10px 10px;
+                    background: #e1e1e1;
+                    border-radius: 5px;
+                    color: #686868;
+                    img {
+                        width: 20px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .mid {
+                width: 40%;
+                .page_list {
+                    float: right;
+                    width: 100%;
+                    .page {
+                        ul {
+                            width: 100%;
+                            display: table;
+                            table-layout: fixed;
+                            li {
+                                list-style-type: none;
+                                display: table-cell;
+                                width: auto;
+                                text-align: center;
+                                a {
+                                    color: black;
+                                    background: none;
+                                    i {
+                                        color: #56a9fe;
+                                    }
+                                }
+                                a.active {
+                                    color: #56a9fe;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

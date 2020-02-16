@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@import "./header";
+@import "./choose-us";
+@import "./sale-us";
+@import "./seach-address";
+@import "./footer";
+@import "./input";
+@import "./button";
+@import "./login";
+@import "./ordersstep1";
+@import "./ordersstep2";
+@import "./ordersstep3";
+@import "./ordersstep4";
+@import "./infocustomerdetail";
+@import "./_updatefile";
+@import "./_chuyen-doi-dang-ky";
+@import "./_domainManager1";
+@import "./_price-service";
+@import "./_setup-acc";
+.customSelectSm {
+    height: 30px !important;
+    padding: 4px 5px 3px 6px;
+    align-self: center;
+}
+
+.table-report {
+    width: 100%;
+    padding-bottom: 70px;
+    .item {
+        display: block;
+        width: percentage(100/3);
+        padding-bottom: 10px;
+        &[data-header="true"] {
+            border-bottom: 1px solid $orangeColor;
+        }
+    }
+    .row-item {
+        justify-content: space-between;
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        span.domain-name {
+            font-weight: 700;
+        }
+        .item-price {
+            display: flex;
+            .wrap-price {
+                color: $orangeColor;
+                font-weight: 700;
+                margin-right: 10px;
+                padding: 3px;
+            }
+            .wrap-actions {
+                a.remove-action {
+                    border: 1px solid #dedede;
+                    padding-right: 7px;
+                    display: block;
+                    padding-left: 5px;
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    color: #666;
+                    cursor: pointer;
+                    img {
+                        width: 13px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .header-title {
+            display: none !important;
+        }
+        .row-item {
+            display: block;
+            border-bottom: 1px solid #c0a53b;
+            .domain-name {
+                font-size: 16px;
+            }
+            .item {
+                width: 100%;
+            }
+        }
+    }
+}

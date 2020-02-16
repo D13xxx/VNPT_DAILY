@@ -1,0 +1,51 @@
+.full-input {
+  display: block;
+  padding: 3px;
+  border: 1px solid #d1d0d1;
+  border-radius: 3px;
+  label{
+    padding-left: 3px;
+    font-size: 13px;
+  }
+  input {
+    outline: none;
+    border: none;
+    display: block;
+    line-height: 1.2em;
+    font-size: 14px;
+  }
+
+  
+}
+
+
+input[type=text]{
+  width:100%;
+}
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  color: #888888;
+}
+
+.form-input {
+  margin-bottom: 10px;
+}
+
+
+
+.form-select{
+  width: 100%;
+  background: url(../images/icon-select-form.png);
+  background-position-x: 100%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 21px;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 1px 12px 1px 2px;
+    border:0px;
+  font-size: 14px;
+}

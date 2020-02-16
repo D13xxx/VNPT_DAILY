@@ -1,0 +1,50 @@
+.btn-common {
+  background: #2984F3;
+  border: 0;
+  padding: 7px 30px 7px 30px;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+
+  &:hover {
+    background: #246fd0;
+    color: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    padding: 7px 20px;
+  }
+}
+
+.btn-login-with {
+  width: 150px;
+}
+
+.btn-grey {
+  background: #EBEBEB;
+  border: 1px solid #dedede;
+  color: #000;
+}
+
+.btn-primary {
+  background: #2984F3;
+
+  &:hover {
+    background: #246fd0;
+  }
+}
+
+.btn-select {
+  border: solid 1px #c0a53b;
+  background: url(../images/icon-select-create.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 110%;
+  background-position-y: center;
+  background-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 1px 12px 1px 2px;
+}

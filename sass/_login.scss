@@ -1,0 +1,87 @@
+@import './variables';
+
+.login-bg-wrap {
+  margin-top: -5px;
+  background: url("../images/dang-nhap/login-background-01.png");
+  background-size: 100%;
+  background-position: center;
+  @media only screen and (max-width: $mobileWidth) {
+    background-size: unset;
+  }
+}
+
+.wrap-form {
+  min-height: 500px;
+  @media only screen and (max-width: $mobileWidth) {
+    min-height: unset;
+  }
+}
+
+.wrap-login {
+  width: 350px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+
+  .wrap-logo {
+    min-height: 50px;
+    text-align: center;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .wrap-login-form {
+    width: 100%;
+
+    .help-text {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .wrap-action {
+      display: flex;
+      justify-content: center;
+
+      button {
+        margin-right: 10px;
+      }
+    }
+
+    .wrap-action-forgot {
+      .wrap-list-forgot-action {
+        margin-top: 10px;
+
+        a {
+          display: block;
+          font-size: 12px;
+          margin-bottom: 3px;
+          text-decoration: underline;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      input[type="checkbox"] {
+        width: 22px;
+      }
+
+      .wrap-remember-me {
+        margin-top: 10px;
+        display: flex;
+        align-items: baseline;
+
+        .remember-text {
+          color: #888888;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

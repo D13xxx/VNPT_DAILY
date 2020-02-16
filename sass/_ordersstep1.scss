@@ -1,0 +1,213 @@
+@import './variables';
+
+$orangeColor: #c0a53b;
+
+.wrap-orders-form {
+  background: #ffffff;
+
+  .wrap-orders-step {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .row-step {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      &[data-type="dot"] {
+        .item {
+          border-bottom: 2px solid #dedede;
+          position: relative;
+
+          &[data-active="true"] {
+            border-bottom: 2px solid #4285ea;
+
+            .dot {
+              background: #4285ea;
+            }
+          }
+
+          span.ear-left {
+            display: block;
+            width: 50%;
+            height: 2px;
+            background: #fff;
+            top: 0px;
+            position: absolute;
+          }
+
+          span.ear-right {
+            display: block;
+            width: 47%;
+            height: 2px;
+            background: #fff;
+            top: 0px;
+            position: absolute;
+            right: 2px;
+            @media only screen and (max-width: $mobileWidth) {
+              width: 42%;
+              right: 0;
+            }
+          }
+
+          span.opa-right {
+            display: block;
+            width: 48%;
+            height: 2px;
+            background: #dedede;
+            top: 0px;
+            position: absolute;
+            right: -1px;
+          }
+        }
+
+        span.dot {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #999;
+          display: block;
+          position: absolute;
+          top: -6px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: 0 auto;
+        }
+      }
+
+      &[data-type="text"] {
+        .item {
+          padding-top: 20px;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: #999;
+
+          &[data-active="true"] {
+            color: #000000;
+          }
+        }
+      }
+
+      .item {
+        width: 25%;
+        text-align: center;
+
+        img {
+          width: 30px;
+          margin-bottom: 20px;
+
+          &[data-step="step1"] {
+            width: 40px;
+          }
+
+          &[data-step="step2"] {
+
+          }
+
+          &[data-step="step3"] {
+            width: 40px;
+          }
+
+          &[data-step="step4"] {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrap-step1-report {
+  background: #F5F5F5;
+  padding-bottom: 50px;
+  padding-top: 30px;
+
+  .wrap-left-panel {
+    .inside {
+      background: #ffffff;
+      padding: 30px 20px 20px;
+      min-height: 300px;
+      position: relative;
+
+      @media (max-width: 768px) {
+        padding: 20px 20px 20px;
+      }
+
+      .footer-fix {
+        border-top: 1px solid $orangeColor;
+        position: absolute;
+        bottom: 15px;
+        font-size: 13px;
+        padding-top: 15px;
+        right: 20px;
+        left: 20px;
+        @media (max-width: 768px) {
+          border-top: 0;
+        }
+
+        .high-light {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .wrap-right-panel {
+    .inside {
+      min-height: 300px;
+      background: #ffffff;
+      position: relative;
+      padding-bottom: 20px;
+
+      h3 {
+        color: #306eb1;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $orangeColor;
+      }
+
+      .wrap-footer-payment {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .wrap-footer-inside {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .wrap-price {
+        padding: 20px;
+
+        .row-price {
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 10px;
+
+          span {
+            //width: 50%;
+          }
+
+          .label-price {
+            text-align: right;
+          }
+
+          .price {
+            flex: 0 0 100px;
+            font-weight: 700;
+            color: $orangeColor;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
